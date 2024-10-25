@@ -1,4 +1,4 @@
-name: CI
+name: Console-CI
 
 on:
   push:
