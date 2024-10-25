@@ -1,0 +1,17 @@
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - 'console/**'
+
+jobs:
+  build:
+    run-on: [self-hosted]
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Echo
+        run: |
+          echo "Hello Console"
